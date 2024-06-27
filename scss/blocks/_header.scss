@@ -1,0 +1,189 @@
+header {
+    padding-block: clamp(4.8rem, 5vh, 7.3rem);
+    background-color: #014e56;
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+  .container,
+  .container .navbar-wrapper,
+  .container .navbar-wrapper ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar-wrapper {
+    gap: clamp(3rem, 4vw, 8rem);
+  }
+  .container .navbar-wrapper ul {
+    gap: 4rem;
+    a {
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 28px;
+      text-align: left;
+      transition: color 0.4s ease;
+      &:hover {
+        color: #b0bfc1;
+      }
+    }
+  }
+  .contact-us-link {
+    display: block;
+    padding: 1rem 3rem;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: left;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    transition: color 0.4s ease;
+    &:hover {
+      color: #b0bfc1;
+      border-color: #b0bfc1;
+    }
+  }
+  @media screen and (max-width: 558px) {
+    .container .navbar-wrapper nav,
+    .container .contact-us-link {
+      display: none;
+    }
+    .menuBtn {
+      display: block;
+      width: 35px;
+    }
+  }
+  
+  .navigationMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 3rem;
+    padding: 3rem;
+    padding-top: 4rem;
+    background-color: #2c6269;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 255px;
+    height: 100vh;
+    nav {
+      margin-top: 5rem;
+    }
+    ul li a {
+      padding: 1rem;
+      font-size: 2.4rem;
+      font-family: "Poppins", sans-serif;
+      color: #fff;
+      line-height: 2;
+      z-index: 1;
+    }
+    .closeBtn {
+      color: #fff;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      position: absolute;
+      top: 5%;
+      right: 5%;
+    }
+    .contact-us-link {
+      margin-top: 2rem;
+    }
+  }
+  .activeMenu {
+    display: flex !important;
+  }
+  
+.forma {
+  padding-block: 12vh;
+  background-color: #014E56;
+  color: #fff;
+  h1 {
+    font-size: clamp(4.8rem, 5vw, 6.4rem);
+  }
+  h2 {
+    margin-block: 3.2rem;
+    color: #F67E7E;
+    font-size: 3.2rem;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      gap: 2.4rem;
+      width: 90%;
+      text-align: center;
+      align-items: center;
+    }
+    @media screen and (max-width: 375px) {
+      width: 100%;
+    }
+  }
+  .text-content-section {
+    width: 50%;
+    @media screen and (max-width: 768px) {
+      width: 90%;
+    }
+  }
+  .variant {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 2.3rem;
+    margin-bottom: 1rem;
+    p {
+      font-size: 1.8rem;
+    }
+  }
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.4rem;
+  width: 50%;
+  text-align: center;
+  input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 1.4rem;
+    color: #f4f4f4;
+    border-bottom: 1px solid #fff;
+    &::placeholder {
+      color: #fff;
+      opacity: .6;
+      font-size: 15px;
+    }
+    &:last-of-type {
+      height: 84px;
+    }
+  }
+  button {
+    padding: 1rem 3.2rem;
+    background-color: #fff;
+    color: #004047;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.4s ease;
+    &:hover {
+      color: #b0bfc1;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    width: 90%;
+  }
+}
